@@ -1,0 +1,28 @@
+<form id="form-nicepay-va" action="index.php?route=extension/payment/nicepay_va/confirm" method="post">
+    <div class="form-group">
+        <label for="input-bank">Choose Bank</label>
+        <select name="bank_code" id="input-bank" class="form-control">
+            {% for code in available_banks %}
+                {% if code == 'CENA' %}<option value="CENA">Bank Central Asia (BCA)</option>{% endif %}
+                {% if code == 'BNIN' %}<option value="BNIN">Bank Negara Indonesia 46 (BNI)</option>{% endif %}
+                {% if code == 'BMRI' %}<option value="BMRI">Bank Mandiri</option>{% endif %}
+                {% if code == 'BRIN' %}<option value="BRIN">Bank Rakyat Indonesia (BRI)</option>{% endif %}
+                {% if code == 'IBBK' %}<option value="IBBK">Bank Maybank</option>{% endif %}
+                {% if code == 'BBBA' %}<option value="BBBA">Bank Permata</option>{% endif %}
+                {% if code == 'BBBB' %}<option value="BBBB">Bank Permata Syariah</option>{% endif %}
+                {% if code == 'HNBN' %}<option value="HNBN">Bank KEB Hana</option>{% endif %}
+                {% if code == 'BNIA' %}<option value="BNIA">Bank CIMB Niaga</option>{% endif %}
+                {% if code == 'BDIN' %}<option value="BDIN">Bank Danamon</option>{% endif %}
+                {% if code == 'PDJB' %}<option value="PDJB">Bank BJB</option>{% endif %}
+                {% if code == 'YUDB' %}<option value="YUDB">Bank Neo Commerce (BNC)</option>{% endif %}
+                {% if code == 'BDKI' %}<option value="BDKI">Bank DKI</option>{% endif %}
+            {% endfor %}
+        </select>
+    </div>
+
+    <div class="buttons">
+        <div class="pull-right">
+            <input type="submit" value="{{ button_confirm }}" class="btn btn-primary" />
+        </div>
+    </div>
+</form>

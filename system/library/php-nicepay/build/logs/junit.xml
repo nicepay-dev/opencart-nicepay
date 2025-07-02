@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="NicepayCvSTest" file="C:\Users\Inka Fazarillah\Documents\Git\nativephp-nicepay\test\NicepayCvSTest.php" tests="1" assertions="2" errors="0" failures="0" skipped="0" time="0.425733">
+    <testcase name="testRegistrationCvSV2" file="C:\Users\Inka Fazarillah\Documents\Git\nativephp-nicepay\test\NicepayCvSTest.php" line="27" class="NicepayCvSTest" classname="NicepayCvSTest" assertions="2" time="0.425733"/>
+  </testsuite>
+</testsuites>
